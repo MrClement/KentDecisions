@@ -1,10 +1,25 @@
 package game;
 
+/**
+ * @author aclement
+ * 
+ */
 public class Starter {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	/**
+	 * getFive is a class designed to return the number 5
+	 * 
+	 * @return the integer 5
+	 */
+	public int getFive() {
+		return 5;
+	}
 
+	/**
+	 * @return the String "Hi"
+	 */
+	public String produceString() {
+		return "Hi";
 	}
 
 }
