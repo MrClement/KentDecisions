@@ -14,6 +14,11 @@ public class Person {
 	private String name;
 	
 	
+	/**
+	 * Person constructs a person with a given name (String), and with the attributes charisma, intelligence, strength, confidence, and wealth as a random number from 1 to 10
+	 * Gender is automatically assigned to true (male), age is assigned as 0 (youth), and alive is set to true (alive)
+	 * @param String name
+	 */
 	public Person(String name){
 		this.name=name;
 		Random rand=new Random();
