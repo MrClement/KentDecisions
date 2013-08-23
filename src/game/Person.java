@@ -1,4 +1,5 @@
 package game;
+import java.util.Random;
 
 public class Person {
 	
@@ -15,6 +16,106 @@ public class Person {
 	
 	public Person(String name){
 		this.name=name;
+		Random rand=new Random();
+		this.intelligence=rand.nextInt(9)+1;
+		this.charisma=rand.nextInt(9)+1;
+		this.strength=rand.nextInt(9)+1;
+		this.gender=true;
+		this.age=0;
+		this.confidence=rand.nextInt(9)+1;
+		this.alive=true;
+		this.wealth=rand.nextInt(9)+1;
 		
 	}
+
+
+	public int getCharisma() {
+		return charisma;
+	}
+
+
+	public void setCharisma(int charisma) {
+		this.charisma = charisma;
+	}
+
+
+	public int getIntelligence() {
+		return intelligence;
+	}
+
+
+	public void setIntelligence(int intelligence) {
+		this.intelligence = intelligence;
+	}
+
+
+	public int getStrength() {
+		return strength;
+	}
+
+
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+
+
+	public int getWealth() {
+		return wealth;
+	}
+
+
+	public void setWealth(int wealth) {
+		this.wealth = wealth;
+	}
+
+
+	public boolean isGender() {
+		return gender;
+	}
+
+
+	public void setGender(boolean gender) {
+		this.gender = gender;
+	}
+
+
+	public boolean isAlive() {
+		return alive;
+	}
+
+
+	public void setAlive(boolean alive) {
+		this.alive = alive;
+	}
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+	public int getConfidence() {
+		return confidence;
+	}
+
+
+	public void setConfidence(int confidence) {
+		this.confidence = confidence;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }
