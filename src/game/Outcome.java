@@ -26,5 +26,14 @@ public class Outcome {
 		this.choiceNumber = choiceNumber;
 		this.canDo = canDo;
 	}
+	public String getOutcome(){
+		if (!canDo){
+			return ("You try at this endeavor, but your qualities cause you" +
+					" to miserably fail. Maybe next time...");
+		}else{
+			return "Success!";
+		}
+		
+	}
 
 }
