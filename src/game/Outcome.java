@@ -5,8 +5,6 @@ package game;
  *
  */
 
-
-
 public class Outcome {
 	private int choiceList;
 	private int choiceNumber;
