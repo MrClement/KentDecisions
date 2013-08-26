@@ -1,10 +1,10 @@
 package game;
 
-public class Choices {
+public class Choice {
 	
 	private Person d;
 	
-	public Choices(Person p)
+	public Choice(Person p)
 	{
 		d = p;
 	}

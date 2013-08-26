@@ -12,6 +12,7 @@ public class Starter {
 	 * @return the integer 5
 	 */
 	public int getFive() {
+		int x;
 		return 5;
 	}
 
