@@ -14,17 +14,23 @@ public class Driver {
 		String a = s.nextLine();
 		Person p = new Person(a);
 		
-		/////////// Outputs stats generated randomly upon creation of Person p //////////
+		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 		
 		System.out.println("These are your stats:");
 		System.out.println(p.getName() + ":");
-		System.out.println("You are makle");
+		System.out.println("You are male");
 		System.out.println("You are currently a child");
 		System.out.println("Charisma = " + p.getCharisma());
 		System.out.println("Intelligence = " + p.getIntelligence());
 		System.out.println("Strength = " + p.getStrength());
 		System.out.println("Wealth = " + p.getWealth());
 		System.out.println("Confidence = " + p.getConfidence());
+		
+		/////////// Runs the Game ///////////
+		
+		while (p.isAlive() == true){
+			
+		}
 		
 
 	}
