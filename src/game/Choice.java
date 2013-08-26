@@ -6,8 +6,8 @@ public class Choice {
 	
 	private Person d;
 	private int Final;
-	private String printText;
-	private String [] story;
+	private String printText; //This is the where the first era printext is
+	private String [] story; //this stores all the choices and storyline so the execute class can print the choice
 	
 	
 	public Choice(Person p)
@@ -21,17 +21,11 @@ public class Choice {
 		System.out.println(printText);
 	}
 	
-	public int execute(int i)
+	public void execute(int i)
 	{
 		//Player inputs which choice-Modifies Final output
-		Final = i;
 		System.out.println(story[i]);
-		return Final;
 	}
 	
-	public int getFinal()
-	{
-		return Final;
-	}
 
 }
