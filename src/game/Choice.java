@@ -6,7 +6,6 @@ public class Choice {
 	private String printText; //This is the where the first era printext is
 	private String [] story; //this stores all the choices and storyline so the execute class can print the choice
 	private String [] outcomes; //array of outcomes to be called on later
-	private boolean genderReq;
 	private int ageReq;
 	private int charismaReq;
 	private int intelligenceReq;
@@ -14,13 +13,30 @@ public class Choice {
 	private int wealthReq;
 	private int confindenceReq;
 	
-	
-	public boolean isGenderReq() {
-		return genderReq;
+	public Choice(String printText1, String [] storylines, String [] outcomelines, int age, int charisma, int intelligence, int strength,int wealth, int confidence)
+	{
+		printText = printText1;
+		story = storylines;
+		outcomes = outcomelines;
+		ageReq = age;
+		charismaReq = charisma;
+		intelligenceReq = intelligence;
+		strengthReq = strength;
+		wealthReq = wealth;
+		confindenceReq = confidence;
 	}
-
-	public void setGenderReq(boolean genderReq) {
-		this.genderReq = genderReq;
+	
+	public void print()
+	{
+		//prints choices to player
+		System.out.println(printText);
+	}
+	
+	public String execute(int i)
+	{
+		//Player inputs which choice-Modifies Final output
+		System.out.println(story[i]);
+		return outcomes[i];
 	}
 
 	public int getAgeReq() {
@@ -70,26 +86,5 @@ public class Choice {
 	public void setConfindenceReq(int confindenceReq) {
 		this.confindenceReq = confindenceReq;
 	}
-	
-	public Choice(String printText1, String [] storylines, String [] outcomelines)
-	{
-		printText = printText1;
-		story = storylines;
-		outcomes = outcomelines;
-	}
-	
-	public void print()
-	{
-		//prints choices to player
-		System.out.println(printText);
-	}
-	
-	public String execute(int i)
-	{
-		//Player inputs which choice-Modifies Final output
-		System.out.println(story[i]);
-		return outcomes[i];
-	}
-	
 
 }
