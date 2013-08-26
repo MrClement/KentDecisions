@@ -21,22 +21,22 @@ public class ChoiceStorage {
 	 * @return whether or not the person p is qualified for choice c
 	 */
 	private boolean isQualified(Person p, Choice c){
-		if(!(p.getAge()==c.getAge())){
+		if(!(p.getAge()==c.getAgeReq())){
 			return false;
 		}
-		else if(!(p.getCharisma()>=c.getCharisma())){
+		else if(!(p.getCharisma()>=c.getCharismaReq())){
 			return false;
 		}
-		else if(!(p.getConfidence()>=c.getConfidence())){
+		else if(!(p.getConfidence()>=c.getConfindenceReq())){
 			return false;
 		}
-		else if(!(p.getIntelligence()>=c.getIntelligence())){
+		else if(!(p.getIntelligence()>=c.getIntelligenceReq())){
 			return false;
 		}
-		else if(!(p.getStrength()>=c.getStrength())){
+		else if(!(p.getStrength()>=c.getStrengthReq())){
 			return false;
 		}
-		else if(!(p.getWealth()>=c.getWealth())){
+		else if(!(p.getWealth()>=c.getWealthReq())){
 			return false;
 		}
 		return true;
