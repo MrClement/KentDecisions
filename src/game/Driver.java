@@ -24,7 +24,7 @@ public class Driver {
 		
 		/////////// Makes new Outcome object o ///////////
 		
-		Outcome o = new Outcome(true, c.getCharisma(), c.getIntelligence(), c.getStrength(), c.getWealth(), c.getConfidence(), c.getAge())
+		Outcome o = new Outcome(true, c.getCharismaReq(), c.getIntelligenceReq(), c.getStrengthReq(), c.getWealthReq(), c.getConfindenceReq(), c.getAgeReq());
 		
 		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 		
