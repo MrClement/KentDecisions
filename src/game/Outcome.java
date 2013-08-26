@@ -5,35 +5,53 @@ package game;
  *
  */
 
+//Outcome modifies the person after receiving a choice.
 public class Outcome {
-	private int choiceList;
-	private int choiceNumber;
-	private boolean canDo;
+	private boolean alive;
+	private int charisma;
+	private int intelligence;
+	private int strength;
+	private int wealth;
+	private int confidence;
+	private int age;
 	/**
-	 * 
-	 * @param choiceList is the number associated with the group of choices the player is
-	 * presented with - determined in the Choices class.
-	 * @param choiceNumber is the number of the choice in the choice list
-	 * that is selected by the user and determined in the Choices class
-	 * @param canDo is a boolean that indicates whether the character can do the selected
-	 * decision successfully (determined in Choices class based off stats in the Person class
+	 * @param alive is a boolean, indicating whether the decision results 
+	 * in the person being alive or dead
+	 * @param charisma is the number (+ or -) which indicates how 
+	 * the charisma of the person is changed by the decision.
+	 * @param intelligence is the number (+ or -) which indicates how 
+	 * the intelligence of the person is changed by the decision.
+	 * @param strength is the number (+ or -) which indicates how 
+	 * the strength of the person is changed by the decision.
+	 * @param wealth is the number (+ or -) which indicates how 
+	 * the wealth of the person is changed by the decision.
+	 * @param confidence is the number (+ or -) which indicates how 
+	 * the wealth of the person is changed by the decision.
+	 * @param age is the number representing the age of the person after the decision.
 	 */
 	
-	//canDo is a boolean - also determined in choices class - that indicates whether the 
-	//character can do the 
-	public Outcome(int choiceList, int choiceNumber, boolean canDo) {
-		this.choiceList = choiceList;
-		this.choiceNumber = choiceNumber;
-		this.canDo = canDo;
+	public Outcome(boolean alive, int charisma, int intelligence, int strength, int wealth,
+			int confidence, int age){
+		this.alive = alive;
+		this.charisma = charisma;
+		this.intelligence = intelligence;
+		this.strength = strength;
+		this.wealth = wealth;
+		this.confidence = confidence;
+		this.age = age;
 	}
-	public String getOutcome(){
-		if (!canDo){
-			return ("You try at this endeavor, but your qualities cause you" +
-					" to miserably fail. Maybe next time...");
-		}else{
-			return "Success!";
-		}
-		
+	/**
+	 * @param p is the Person object playing the game that is to be modified.
+	 */
+	public void updateAttributes(Person p){
+		p.setAlive(alive);
+		p.setCharisma(p.getCharisma() + charisma);
+		p.setIntelligence(p.getIntelligence() + intelligence);
+		p.setStrength(p.getStrength() + strength);
+		p.setWealth(p.getWealth() + wealth);
+		p.setConfidence(p.getConfidence() + confidence);
+		p.setAge(age);
 	}
+	
 
 }
