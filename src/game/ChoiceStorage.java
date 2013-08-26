@@ -3,7 +3,7 @@ package game;
 import java.util.ArrayList;
 
 public class ChoiceStorage {
-
+	private int currentChoice;
 	private ArrayList<Choice> choices = new ArrayList<Choice>();
 
 	/**
@@ -13,6 +13,13 @@ public class ChoiceStorage {
 		
 	}
 	
+	/**
+	 * returns a boolean that is true if the person's attributes satisfy all
+	 * of the requirements for the choice c 
+	 * @param p
+	 * @param c
+	 * @return whether or not the person p is qualified for choice c
+	 */
 	private boolean isQualified(Person p, Choice c){
 		if(!(p.getAge()==c.getAge())){
 			return false;
@@ -41,8 +48,23 @@ public class ChoiceStorage {
 	 * 
 	 * @return A choice that the person is qualified for
 	 */
+	/**
+	 * @param p
+	 * @return
+	 */
 	public Choice getNextChoice(Person p) {
-		return null;
+		Choice selectedChoice=choices.get(currentChoice+1);
+		currentChoice++;
+		boolean qualified=false;
+		while(!qualified){
+			if(this.isQualified(p, selectedChoice)){
+				qualified=true;
+			}
+			else{
+				selectedChoice=choices.get(currentChoice+1);
+			}
+		}
+		return selectedChoice;
 	}
 
 }
