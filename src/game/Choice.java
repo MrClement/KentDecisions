@@ -3,16 +3,16 @@ package game;
 import java.util.Scanner;
 
 public class Choice {
-	
-	private Person d;
 	private int Final;
 	private String printText; //This is the where the first era printext is
 	private String [] story; //this stores all the choices and storyline so the execute class can print the choice
+	private String [] outcomes; //array of outcomes to be called on later
 	
-	
-	public Choice(Person p)
+	public Choice(String printText1, String [] storylines, String [] outcomelines)
 	{
-		d = p;
+		printText = printText1;
+		story = storylines;
+		outcomes = outcomelines;
 	}
 	
 	public void print()
