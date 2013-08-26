@@ -30,7 +30,20 @@ public class Driver {
 		
 		while (p.isAlive() == true){
 			
+			 
+			
 		}
+		
+		/////////// Prints Final stats ///////////
+		
+		System.out.println("You Died.");
+		System.out.println("These are your final stats:");
+		System.out.println(p.getName() + ":");
+		System.out.println("Charisma = " + p.getCharisma());
+		System.out.println("Intelligence = " + p.getIntelligence());
+		System.out.println("Strength = " + p.getStrength());
+		System.out.println("Wealth = " + p.getWealth());
+		System.out.println("Confidence = " + p.getConfidence());
 		
 
 	}
