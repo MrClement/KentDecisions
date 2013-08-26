@@ -14,6 +14,14 @@ public class Driver {
 		String a = s.nextLine();
 		Person p = new Person(a);
 		
+		/////////// Makes new ChoiceStorage object cs ///////////
+		
+		ChoiceStorage cs = new ChoiceStorage();
+		
+		/////////// Makes new Choice object c ///////////
+		
+		Choice c = new Choice(p);
+		
 		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 		
 		System.out.println("These are your stats:");
@@ -30,7 +38,11 @@ public class Driver {
 		
 		while (p.isAlive() == true){
 			
-			 
+			c.print(); // Outputs the choice to the user
+			int x = s.nextInt(); // Takes in the user's input and stores it in x
+			c.execute(x); // Makes decision with x
+			
+			c = cs.getNextChoice(p); // Makes c the next choice
 			
 		}
 		

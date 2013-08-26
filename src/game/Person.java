@@ -19,6 +19,7 @@ public class Person {
 	 * Gender is automatically assigned to true (male), age is assigned as 0 (youth), and alive is set to true (alive)
 	 * @param String name
 	 */
+	
 	public Person(String name){
 		this.name=name;
 		Random rand=new Random();
@@ -34,6 +35,9 @@ public class Person {
 	}
 
 
+	/**getter for a person's charisma
+	 * @return charisma
+	 */
 	public int getCharisma() {
 		return charisma;
 	}
