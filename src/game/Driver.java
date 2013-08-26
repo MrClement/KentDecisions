@@ -22,6 +22,10 @@ public class Driver {
 		
 		Choice c = new Choice(p);
 		
+		/////////// Makes new Outcome object o ///////////
+		
+		Outcome o = new Outcome(true, c.getCharisma(), c.getIntelligence(), c.getStrength(), c.getWealth(), c.getConfidence(), c.getAge())
+		
 		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 		
 		System.out.println("These are your stats:");
@@ -41,6 +45,8 @@ public class Driver {
 			c.print(); // Outputs the choice to the user
 			int x = s.nextInt(); // Takes in the user's input and stores it in x
 			c.execute(x); // Makes decision with x
+			
+			o.updateAttributes(p);
 			
 			c = cs.getNextChoice(p); // Makes c the next choice
 			
