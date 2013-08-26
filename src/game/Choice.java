@@ -1,28 +1,34 @@
 package game;
 
+import java.util.Scanner;
+
 public class Choice {
 	
 	private Person d;
+	private int Final;
+	
 	
 	public Choice(Person p)
 	{
 		d = p;
 	}
 	
-	public int execute(String s)
+	public void print()
 	{
-		//takes choice selected-influence outcome
+		//prints choices to player
+		System.out.println("Welcome to the game!");
 	}
 	
-	public String print(Person d)
+	public int execute(int i)
 	{
-		//prints the choices to player
+		//Player inputs which choice-Modifies Final output
+		Final = i;
+		return Final;
 	}
 	
-	public String choice()
+	public int getFinal()
 	{
-		//takes in choice via scanner and stores in a string for execute class
+		return Final;
 	}
-	
 
 }
