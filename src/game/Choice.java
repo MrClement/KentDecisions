@@ -21,10 +21,11 @@ public class Choice {
 		System.out.println(printText);
 	}
 	
-	public void execute(int i)
+	public String execute(int i)
 	{
 		//Player inputs which choice-Modifies Final output
 		System.out.println(story[i]);
+		return outcomes[i];
 	}
 	
 
