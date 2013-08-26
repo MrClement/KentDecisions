@@ -20,7 +20,7 @@ public class Driver {
 		
 		/////////// Makes new Choice object c ///////////
 		
-		Choice c = new Choice(p);
+		Choice c = cs.getNextChoice(p);
 		
 		/////////// Makes new Outcome object o ///////////
 		
