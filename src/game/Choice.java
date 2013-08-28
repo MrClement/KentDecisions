@@ -40,7 +40,7 @@ public class Choice {
 		if (success) {
 			return outcomes[i];
 		} else
-			return outcomes[i + 5];
+			return outcomes[i + 10];
 	}
 
 	public int getAgeReq() {
