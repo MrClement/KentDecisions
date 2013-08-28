@@ -44,9 +44,22 @@ public class CurtisAdult {
 							A1Story, A1Outcomes, 2, 0, 0, 0, 0, 0);
 	
 	
+	private String A2printText = "You are bored at home. You decide to do something. You can read a book, work out, or go to a party";
 	
 	private String[] A2Story = {
-			
+			"You decide to read a book. You are now more intelligent",
+			"You decide to work out. You are now stronger",
+			"You decide to go to a party. Charisma goes up"
 	};
+	
+	private Outcome[] A2Outcomes = {
+			new Outcome(true, 0, 10, 0, 0, 0, 0),
+			new Outcome(true, 0, 0, 10, 0, 0, 0),
+			new Outcome(true, 10, 0, 0, 0, 0, 0),
+	};
+	
+	Choice choiceA2=new Choice(A2printText, A2Story, A2Outcomes, 2, 0, 0, 0, 0, 0);
+	
+	pr
 	
 }
