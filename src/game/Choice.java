@@ -13,6 +13,8 @@ public class Choice {
 	private int wealthReq;
 	private int confindenceReq;
 
+	private boolean success;
+
 	public Choice(String printText1, String[] storylines, Outcome[] outcomelines, int age, int charisma,
 			int intelligence, int strength, int wealth, int confidence) {
 		printText = printText1;
@@ -24,6 +26,7 @@ public class Choice {
 		strengthReq = strength;
 		wealthReq = wealth;
 		confindenceReq = confidence;
+		success = true;
 	}
 
 	public void print() {
@@ -34,7 +37,10 @@ public class Choice {
 	public Outcome execute(int i) {
 		// Player inputs which choice-Modifies Final output
 		System.out.println(story[i]);
-		return outcomes[i];
+		if (success) {
+			return outcomes[i];
+		} else
+			return outcomes[i + 5];
 	}
 
 	public int getAgeReq() {
@@ -83,6 +89,14 @@ public class Choice {
 
 	public void setConfindenceReq(int confindenceReq) {
 		this.confindenceReq = confindenceReq;
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
 	}
 
 }
