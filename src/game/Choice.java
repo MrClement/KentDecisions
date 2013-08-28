@@ -1,20 +1,20 @@
 package game;
 
-
 public class Choice {
 	private int Final;
-	private String printText; //This is the where the first era printext is
-	private String [] story; //this stores all the choices and storyline so the execute class can print the choice
-	private String [] outcomes; //array of outcomes to be called on later
+	private String printText; // This is the where the first era printext is
+	private String[] story; // this stores all the choices and storyline so the
+							// execute class can print the choice
+	private Outcome[] outcomes; // array of outcomes to be called on later
 	private int ageReq;
 	private int charismaReq;
 	private int intelligenceReq;
 	private int strengthReq;
 	private int wealthReq;
 	private int confindenceReq;
-	
-	public Choice(String printText1, String [] storylines, String [] outcomelines, int age, int charisma, int intelligence, int strength,int wealth, int confidence)
-	{
+
+	public Choice(String printText1, String[] storylines, Outcome[] outcomelines, int age, int charisma,
+			int intelligence, int strength, int wealth, int confidence) {
 		printText = printText1;
 		story = storylines;
 		outcomes = outcomelines;
@@ -25,16 +25,14 @@ public class Choice {
 		wealthReq = wealth;
 		confindenceReq = confidence;
 	}
-	
-	public void print()
-	{
-		//prints choices to player
+
+	public void print() {
+		// prints choices to player
 		System.out.println(printText);
 	}
-	
-	public String execute(int i)
-	{
-		//Player inputs which choice-Modifies Final output
+
+	public Outcome execute(int i) {
+		// Player inputs which choice-Modifies Final output
 		System.out.println(story[i]);
 		return outcomes[i];
 	}
