@@ -26,10 +26,10 @@ public class JeremyTeen {
 	};
 	
 	private String[] sl2 = {
-		"",
-		"", 
-		"",
-		""
+		"You wake up on a park bench in the next town over wearing a traffic cone as hat.",
+		"The next day, your friend thanks you profusely for your wise actions of the previous night.", 
+		"You meet a girl named Maria and hit it off.",
+		"You stay in the corner and keep to yourself. No one seems to notice your presence."
 	};
 	
 	private String[] sl3 = {
@@ -65,9 +65,9 @@ public class JeremyTeen {
 		o4
 	};
 	
-	private Outcome o5 = new Outcome(true, 2 , -1 , 5, 0, 5, 0);
-	private Outcome o6 = new Outcome(true, 5 , -1 , 0, 2, 5, 0);
-	private Outcome o7 = new Outcome(true, -1 , 5 , 0, 5, 2, 0);
+	private Outcome o5 = new Outcome(true, 7 , -4 , 4, -2, 7, 0);
+	private Outcome o6 = new Outcome(true, 3 , 5 , 0, 0, 4, 0);
+	private Outcome o7 = new Outcome(true, 6 , 0 , 0, -1, 7, 0);
 	private Outcome o8 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
 	
 	private Outcome[] ol2 = {
