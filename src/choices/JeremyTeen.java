@@ -12,31 +12,44 @@ public class JeremyTeen {
 		this.p = p;
 	}
 	
-	private String pt1 = "";
-	private String pt2 = "";
+	private String pt1 = "Welcome to your first day of highschool! Today you get to decide how you want to act.\n1: Become a sports jock.\n2: Hang with the popular crowd.\n3: Study for your classes.\n4: Do nothing";
+	private String pt2 = "You get invited to a party. Everyone seems to be having fun. Drugs and alcohol are present.\n1: Get drunk and go crazy\n2: Drive your drunk friend home\n3: Socialize\n4: Stare at your phone";
 	private String pt3 = "";
 	private String pt4 = "";
 	private String pt5 = "";
 	
 	private String[] sl1 = {
-		"A",
-		"B", 
-		"C"
+		"You get recruited by the Lax team because of your sick Lax skills. Lax.",
+		"You meet some new friends. Everyone seems to want to sit next to you at lunch.", 
+		"You hit the books. Your grades stay steady and the teachers seem to enjoy your participation in class.",
+		"You just kinda coast along. Nobody seems to know a whole lot about you."
 	};
 	
 	private String[] sl2 = {
+		"",
+		"", 
+		"",
 		""
 	};
 	
 	private String[] sl3 = {
+		"",
+		"", 
+		"",
 		""
 	};
 	
 	private String[] sl4 = {
+		"",
+		"", 
+		"",
 		""
 	};
 	
 	private String[] sl5 = {
+		"",
+		"", 
+		"",
 		""
 	};
 	
@@ -100,11 +113,11 @@ public class JeremyTeen {
 		o20
 	};
 	
-	Choice c1 = new Choice(pt1, sl1, ol1, p.getAge(), charisma, intelligence, strength, wealth, confidence);
-	Choice c2 = new Choice(pt2, sl2, ol2, p.getAge(), charisma, intelligence, strength, wealth, confidence);
-	Choice c3 = new Choice(pt3, sl3, ol3, p.getAge(), charisma, intelligence, strength, wealth, confidence);
-	Choice c4 = new Choice(pt4, sl4, ol4, p.getAge(), charisma, intelligence, strength, wealth, confidence);
-	Choice c5 = new Choice(pt5, sl5, ol5, p.getAge(), charisma, intelligence, strength, wealth, confidence);
+	Choice c1 = new Choice(pt1, sl1, ol1, p.getAge(), 0, 0, 0, 0, 0);
+	Choice c2 = new Choice(pt2, sl2, ol2, p.getAge(), 0, 0, 0, 0, 0);
+	Choice c3 = new Choice(pt3, sl3, ol3, p.getAge(), 0, 0, 0, 0, 0);
+	Choice c4 = new Choice(pt4, sl4, ol4, p.getAge(), 0, 0, 0, 0, 0);
+	Choice c5 = new Choice(pt5, sl5, ol5, p.getAge(), 0, 0, 0, 0, 0);
 	
 	
 }
