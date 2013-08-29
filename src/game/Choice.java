@@ -4,7 +4,7 @@ public class Choice {
 	private int Final;
 	private String printText; // This is the where the first era printext is
 	private String[] story; // this stores all the choices and storyline so the
-	private Requirements[] requirements;						// execute class can print the choice
+	private Requirements[] requirements; // execute class can print the choice
 	private Outcome[] outcomes; // array of outcomes to be called on later
 	private Person p;
 	private int ageReq;
@@ -13,13 +13,12 @@ public class Choice {
 	private int strengthReq;
 	private int wealthReq;
 	private int confindenceReq;
-	private Outcome o = new Outcome(true, 0, 0, 0, 0,
-			0, 0);
+	private Outcome o = new Outcome(true, 0, 0, 0, 0, 0, 0);
 
 	private boolean success;
 
-	public Choice(String printText1, String[] storylines, Requirements[] reqs, Outcome[] outcomelines, Person d, int age, int charisma,
-			int intelligence, int strength, int wealth, int confidence) {
+	public Choice(String printText1, String[] storylines, Requirements[] reqs, Outcome[] outcomelines, Person d,
+			int age, int charisma, int intelligence, int strength, int wealth, int confidence) {
 		printText = printText1;
 		story = storylines;
 		outcomes = outcomelines;
@@ -29,7 +28,7 @@ public class Choice {
 		intelligenceReq = intelligence;
 		strengthReq = strength;
 		wealthReq = wealth;
-		p=d;
+		p = d;
 		confindenceReq = confidence;
 		success = true;
 	}
@@ -41,15 +40,16 @@ public class Choice {
 
 	public Outcome execute(int i) {
 		// Player inputs which choice-Modifies Final output
-		if(p.getCharisma()>=requirements[i].getCharismaReq() && p.getIntelligence()>=requirements[i].getIntelligenceReq()
-				&& p.getStrength()>=requirements[i].getStrengthReq() && p.getConfidence() >= requirements[i].getConfidenceReq() && p.getWealth()>=requirements[i].getWealthReq())
-		{
-		System.out.println(story[i]);
+		if (p.getCharisma() >= requirements[i].getCharismaReq()
+				&& p.getIntelligence() >= requirements[i].getIntelligenceReq()
+				&& p.getStrength() >= requirements[i].getStrengthReq()
+				&& p.getConfidence() >= requirements[i].getConfidenceReq()
+				&& p.getWealth() >= requirements[i].getWealthReq()) {
+			System.out.println(story[i]);
 			return outcomes[i];
-		}
-		else
-		{System.out.println("You have failed");
-		return o;
+		} else {
+			System.out.println(story[i + 10]);
+			return outcomes[i + 10];
 		}
 	}
 
