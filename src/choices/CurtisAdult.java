@@ -41,12 +41,16 @@ public class CurtisAdult {
 	};
 	
 	Requirements[] A1reqs = {
-			new Requirements(1,1,1,0,1),
-			new Requirements()
-	}
+			new Requirements(1,1,1,1,1),
+			new Requirements(3,20,15,5,5),
+			new Requirements(20,5,30,20,10),
+			new Requirements(10,30,5,15,10),
+			new Requirements(30,20,5,10,10),
+			new Requirements(20,30,5,20,15)
+	};
 	
-	Choice choiceA1=new Choice("You decide to get a job. The choices are 'McDoodles worker', 'Mechanic', 'Sports Star', 'Pop Star', 'Engineer', 'CEO', or 'Politician'", 
-							A1Story, A1Outcomes, 2, 0, 0, 0, 0, 0);
+	Choice choiceA1=new Choice("You decide to get a job. The choices are 'McDoodles worker', 'Mechanic', 'Sports Star', 'Engineer', 'CEO', or 'Politician'", 
+							A1Story, A1reqs, A1Outcomes, 2, 0, 0, 0, 0, 0);
 	
 	
 	private String A2printText = "You are bored at home. You decide to do something. You can read a book, work out, or go to a party";
@@ -56,6 +60,8 @@ public class CurtisAdult {
 			"You decide to work out. You are now stronger",
 			"You decide to go to a party. Charisma goes up"
 	};
+	
+	
 	
 	private Outcome[] A2Outcomes = {
 			new Outcome(true, 0, 10, 0, 0, 0, 0),
