@@ -21,8 +21,12 @@ public class HarryYouth {
 	Choice c1 = new Choice("When you are born you see an object in the distance what do you do? \n1. Leave the object alone \n2.Leave the object and cry \n3. Crawl over to the object and grab it \n4.Flail misserably\5.Crawl over to the object and shake it up and down.", 
 			c1Story, outcomeLineC2, d.getAge(), d.getCharisma(), d.getIntelligence(), d.getStrength(), d.getWealth(), d.getConfidence());
 	
-	String [] c2Story = new String[]{
-	Choice c2 = new Choice("You are now away from being in the isolated haven now known as 'Home' and you are entering a new place your parents call 'School'. \nWhen you enter this weird place you see kids like yourself running around. \nConfused by everything happening what do you do?", storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
+	String [] c2Story = new String[] {"Your confidence and charisma have impressed your peers. \nYou are immensily successful and have just found some bros for life! \nYou will surely reap the benefits of being one of the cool kids later in life...Keep it up.",
+			"Ohhhh so your one of THOSE kids...",
+			"Your dedication to academia is quite apparant.\n "
+			
+	}
+	Choice c2 = new Choice("You are now away from being in the isolated haven now known as 'Home' and you are entering a new place your parents call 'School'. \nWhen you enter this weird place you see kids like yourself running around. \nConfused by everything happening what do you do? \n1.Approach some of the boys that are playing blocks with eachother and say 'What up bros' .\n2.Sit in the corner and sniff and eat glue \n3.Go pick up a book and start looking at pictures. \n4.Approach one of the kids that are playing by themselves.", storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
 	Choice c3 = new Choice(printText1, storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
 	Choice c4 = new Choice(printText1, storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
 	Choice c5 = new Choice(printText1, storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
