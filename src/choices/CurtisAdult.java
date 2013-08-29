@@ -2,6 +2,7 @@ package choices;
 
 import game.Choice;
 import game.Outcome;
+import game.Requirements;
 
 public class CurtisAdult {
 	private String[] A1Story = {
@@ -39,6 +40,10 @@ public class CurtisAdult {
 		
 	};
 	
+	Requirements[] A1reqs = {
+			new Requirements(1,1,1,0,1),
+			new Requirements()
+	}
 	
 	Choice choiceA1=new Choice("You decide to get a job. The choices are 'McDoodles worker', 'Mechanic', 'Sports Star', 'Pop Star', 'Engineer', 'CEO', or 'Politician'", 
 							A1Story, A1Outcomes, 2, 0, 0, 0, 0, 0);

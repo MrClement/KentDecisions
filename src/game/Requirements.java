@@ -13,8 +13,48 @@ public class Requirements {
 	private int wealthReq;
 	private int confidenceReq;
 	
+	public int getCharismaReq() {
+		return charismaReq;
+	}
+
+	public void setCharismaReq(int charismaReq) {
+		this.charismaReq = charismaReq;
+	}
+
+	public int getIntelligenceReq() {
+		return intelligenceReq;
+	}
+
+	public void setIntelligenceReq(int intelligenceReq) {
+		this.intelligenceReq = intelligenceReq;
+	}
+
+	public int getStrengthReq() {
+		return strengthReq;
+	}
+
+	public void setStrengthReq(int strengthReq) {
+		this.strengthReq = strengthReq;
+	}
+
+	public int getWealthReq() {
+		return wealthReq;
+	}
+
+	public void setWealthReq(int wealthReq) {
+		this.wealthReq = wealthReq;
+	}
+
+	public int getConfidenceReq() {
+		return confidenceReq;
+	}
+
+	public void setConfidenceReq(int confidenceReq) {
+		this.confidenceReq = confidenceReq;
+	}
+
 	/**
-	 * constructor for Requirements. pretty self-explanitory
+	 * constructor for Requirements. pretty self-explanatory
 	 * 
 	 * @param charisma
 	 * @param intelligence
