@@ -4,7 +4,7 @@ public class Choice {
 	private int Final;
 	private String printText; // This is the where the first era printext is
 	private String[] story; // this stores all the choices and storyline so the
-							// execute class can print the choice
+	private Requirements[] requirements;						// execute class can print the choice
 	private Outcome[] outcomes; // array of outcomes to be called on later
 	private int ageReq;
 	private int charismaReq;
@@ -15,11 +15,12 @@ public class Choice {
 
 	private boolean success;
 
-	public Choice(String printText1, String[] storylines, Outcome[] outcomelines, int age, int charisma,
+	public Choice(String printText1, String[] storylines, Requirements[] reqs, Outcome[] outcomelines, int age, int charisma,
 			int intelligence, int strength, int wealth, int confidence) {
 		printText = printText1;
 		story = storylines;
 		outcomes = outcomelines;
+		requirements = reqs;
 		ageReq = age;
 		charismaReq = charisma;
 		intelligenceReq = intelligence;

@@ -60,6 +60,6 @@ public class CurtisAdult {
 	
 	Choice choiceA2=new Choice(A2printText, A2Story, A2Outcomes, 2, 0, 0, 0, 0, 0);
 	
-	private String A3printText="You are very lonely. Would you like to try to get married?"
+	private String A3printText="You are very lonely. Would you like to try to get married?";
 	
 }
