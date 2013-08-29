@@ -49,22 +49,38 @@ public class WesleyOld {
 	// ************************* //
 	//         Outcomes         //
 	
-	//private Outcome pt1c1 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt1c2 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt1c3 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt1c4 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt2c1 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt2c2 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt2c3 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt2c4 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt3c1 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt3c2 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt3c3 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt3c4 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt4c1 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt4c2 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt4c3 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
-	//private Outcome pt4c4 = new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age);
+	
+//	public Outcome[] outcomes1 = {
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age)
+//	}
+//	public Outcome[] outcomes2 = {
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age)
+//	}
+//	public Outcome[] outcomes3 = {
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age)
+//	}
+//	public Outcome[] outcomes4 = {
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age)
+//	}
+//	public Outcome[] outcomes5 = {
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age),
+//			new Outcome(alive, charisma, intelligence, strength, wealth, confidence, age)
+//	}
 
+	
 	
 }
