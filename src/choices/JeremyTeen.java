@@ -14,7 +14,7 @@ public class JeremyTeen {
 	
 	private String pt1 = "Welcome to your first day of highschool! Today you get to decide how you want to act.\n1: Become a sports jock.\n2: Hang with the popular crowd.\n3: Study for your classes.\n4: Do nothing";
 	private String pt2 = "You get invited to a party. Everyone seems to be having fun. Drugs and alcohol are present.\n1: Get drunk and go crazy\n2: Drive your drunk friend home\n3: Socialize\n4: Stare at your phone";
-	private String pt3 = "";
+	private String pt3 = "It is the day before finals. The year is almost over and summer is within your reach. Do you: \n1: Spend your time studying for your tests.\n2: Hang out with your friends and cram the morning of the test.\n3: Don't study and try to cheat off of someone else.\n4: Just kinda chill.";
 	private String pt4 = "";
 	private String pt5 = "";
 	
@@ -33,10 +33,10 @@ public class JeremyTeen {
 	};
 	
 	private String[] sl3 = {
-		"",
-		"", 
-		"",
-		""
+		"After hours of studying you feel ready for your tests. You do well on all of them.",
+		"You don't do awesome on your tests, but you feel as though your friends appreciate your carefree style.", 
+		"You do well on your tests: maybe a little too well. Nobody has proof of anything, but you lose the trust of those around you.",
+		"You do pretty average, although your not even sure your teachers know your name."
 	};
 	
 	private String[] sl4 = {
