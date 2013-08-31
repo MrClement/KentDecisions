@@ -12,6 +12,10 @@ public class CurtisAdult {
 			"You become an engineer",
 			"You become a CEO",
 			"You become a politician",
+			null,
+			null,
+			null,
+			null,
 			"You fail to become a McDoodles worker. You may wish to reevaluate your life.",
 			"You fail to become a mechanic. Perhaps a lower-skill job would be better for you.",
 			"You fail to become a sports star. Try to get stronger.",
@@ -49,6 +53,8 @@ public class CurtisAdult {
 			new Requirements(20,30,5,20,15)
 	};
 	
+	
+	
 	Choice choiceA1=new Choice("You decide to get a job. The choices are 'McDoodles worker', 'Mechanic', 'Sports Star', 'Engineer', 'CEO', or 'Politician'", 
 							A1Story, A1reqs, A1Outcomes, 2, 0, 0, 0, 0, 0);
 	
@@ -73,4 +79,106 @@ public class CurtisAdult {
 	
 	private String A3printText="You are very lonely. Would you like to try to get married?";
 	
+	private String[] A3Story= {
+			"Congratulations! You managed to convince someone to spend their entire life with you! You are now married.",
+			"If this text is displayed, something is horribly wrong",
+			"Seriously, if you can see this, they're coming",
+			"I'm not kidding. You'd better run",
+			"Seriously, RUN!",
+			"Well clearly you're not listening to me",
+			"I'm going to sit tight while they eat you",
+			"and I'm not going to feel any regret",
+			"Well, I guess this is a lost cause",
+			"bye...",
+			"You failed to convince somebody to marry you. You must be ugly, poor, or both"
+			
+			
+	};
+	private Requirements[] A3reqs = {
+		new Requirements(30, 20, 15, 20, 25)
+	};
+	
+	private Outcome[] A3Outcomes = {
+		new Outcome(true, 10, 0, 0, -10, 10, 0),
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		new Outcome(true, -5, 0, 0, 0, -20, 0)
+	};
+	Choice choiceA3=new Choice(A3printText, A3Story, A3reqs, A3Outcomes, 3,0,0,0,0,0);
+	
+	private String A4printText = "You really hate people. You're so angry you consider becoming a serial killer. Would you like to become a serial killer?";
+	
+	private String[] A4Story = {
+			"You succeed at becoming a serial killer, you monster",
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			"At the house of your first hit, you are discovered, and the police are called. You are shot by the police and die."
+	};
+	
+	private Outcome[] A4Outcomes = {
+			new Outcome(true, 5, 10, 10, -5, 10, 0),
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			new Outcome(false, -100, -100, -100, -100, -100, 0)
+			
+	};
+	
+	private Requirements[] A4reqs = {
+			new Requirements(40, 30, 20, 20, 0)
+	};
+	
+	Choice choiceA4=new Choice(A4printText, A4Story, A4reqs, A4Outcomes, 3, 30, 0, 0, 0, 0);
+	
+	private String A5PrintText = "Kids?";
+	
+	private String[] A5Story = {
+			"You've had a baby! prepare for the next 18 years well",
+			"Maybe? Well, I suppose I'll choose for you and give you a baby, you seem qualified enough. Your reluctance will not, however, go unpunished",
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			"You didn't manage to have a baby. You aren't very good at this, are you?",
+			"Maybe? You seem horribly unqualified to have a kid, so I'll spare the baby and not let you have one"
+	};
+	
+	private Requirements[] A5Reqs = {
+			new Requirements(5, 0, 5, 0, 0),
+			new Requirements(5, 15, 10, 20, 0)
+	};
+	
+	private Outcome[] A5Outcomes = {
+			new Outcome(true, 5, 5, 5, -20, 5, 0),
+			new Outcome(true, 5, 5, 5, -30, -10, 0),
+			new Outcome(true, 0, 0, 0, -5, -15, 0),
+			new Outcome(true, 0, 0, 0, 0, 0, 0)
+	};
+	
+	Choice choiceA5=new Choice(A5PrintText, A5Story, A5Reqs, A5Outcomes, 3, 0, 0, 0, 0, 0);
+			
 }
