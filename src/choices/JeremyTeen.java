@@ -13,13 +13,15 @@ public class JeremyTeen {
 		this.p = p;
 	}
 	
-	
+	/////////// Constructs the Prompts ///////////
 	
 	private String pt1 = "Welcome to your first day of highschool! Today you get to decide how you want to act.\n1: Become a sports jock.\n2: Hang with the popular crowd.\n3: Study for your classes.\n4: Do nothing";
 	private String pt2 = "You get invited to a party. Everyone seems to be having fun. Drugs and alcohol are present.\n1: Get drunk and go crazy\n2: Drive your drunk friend home\n3: Socialize\n4: Stare at your phone";
 	private String pt3 = "It is the day before finals. The year is almost over and summer is within your reach. Do you: \n1: Spend your time studying for your tests.\n2: Hang out with your friends and cram the morning of the test.\n3: Don't study and try to cheat off of someone else.\n4: Just kinda chill.";
 	private String pt4 = "It is senior year and about time you made up your mind about College. Let's apply! \n1: You apply to the best engineering schools in the country. \n2: You apply to schools with Division A Lax teams. \n3: You apply to law school. \n4: You decide maybe college isn't your thing.";
 	private String pt5 = "It's time to find a full-time job. n\1: Get a job. n\2: Go back to live at your parents' house.";
+	
+	/////////// Constructs the outcome string arrays ///////////
 	
 	private String[] sl1 = {
 		"You get recruited by the Lax team because of your sick Lax skills. Lax.",
@@ -53,6 +55,8 @@ public class JeremyTeen {
 		"Welcome to adulthood.",
 		"Your parents aren't very happy about this."
 	};
+	
+	/////////// Constructs outcomes and outcome arrays ///////////
 	
 	private Outcome o1 = new Outcome(true, 2 , -1 , 5, 0, 5, 0);
 	private Outcome o2 = new Outcome(true, 5 , -1 , 0, 2, 5, 0);
@@ -111,6 +115,8 @@ public class JeremyTeen {
 		o18,
 	};
 	
+	/////////// Constructs requirements and requirement arrays ///////////
+	
 	private Requirements r1 = new Requirements(2, 0, 2, 0, 2);
 	private Requirements r2 = new Requirements(2, 0, 0, 2, 2);
 	private Requirements r3 = new Requirements(1, 3, 0, 1, 1);
@@ -167,6 +173,8 @@ public class JeremyTeen {
 		r17,
 		r18,
 	};
+	
+	/////////// Constructs the choices ///////////
 	
 	Choice c1 = new Choice(pt1, sl1, ra1, ol1, p, p.getAge(), 0, 0, 0, 0, 0);
 	Choice c2 = new Choice(pt2, sl2, ra2, ol2, p, p.getAge(), 0, 0, 0, 0, 0);
