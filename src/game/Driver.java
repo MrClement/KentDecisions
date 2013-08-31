@@ -6,7 +6,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 
-		// ///////// Makes new Person with name a ///////////
+		/////////// Makes new Person with name a ///////////
 
 		Scanner s = new Scanner(System.in);
 		System.out.println("Welcome to Decisions");
@@ -14,22 +14,21 @@ public class Driver {
 		String a = s.nextLine();
 		Person p = new Person(a);
 
-		// ///////// Makes new ChoiceStorage object cs ///////////
+		/////////// Makes new ChoiceStorage object cs ///////////
 
 		ChoiceStorage cs = new ChoiceStorage();
 
-		// ///////// Makes new Choice object c ///////////
+		/////////// Makes new Choice object c ///////////
 
-		// Choice c = cs.getNextChoice(p);
+		Choice c = cs.getNextChoice(p);
 
-		// ///////// Makes new Outcome object o ///////////
+		/////////// Makes new Outcome object o ///////////
 
-		// Outcome o = new Outcome(true, c.getCharismaReq(),
-		// c.getIntelligenceReq(), c.getStrengthReq(), c.getWealthReq(),
-		// c.getConfindenceReq(), c.getAgeReq());
+		Outcome o = new Outcome(true, c.getCharismaReq(),
+		c.getIntelligenceReq(), c.getStrengthReq(), c.getWealthReq(),
+		c.getConfindenceReq(), c.getAgeReq());
 
-		// ///////// Outputs stats generated randomly upon creation of Person p
-		// ///////////
+		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 
 		System.out.println("These are your stats:");
 		System.out.println(p.getName() + ":");
@@ -43,21 +42,17 @@ public class Driver {
 
 		s.nextLine();
 
-		// ///////// Runs the Game ///////////
-		/*
-		 * while (p.isAlive() == true){
-		 * 
-		 * c.print(); // Outputs the choice to the user int x = s.nextInt(); //
-		 * Takes in the user's input and stores it in x c.execute(x); // Makes
-		 * decision with x
-		 * 
-		 * o.updateAttributes(p);
-		 * 
-		 * c = cs.getNextChoice(p); // Makes c the next choice
-		 * 
-		 * }
-		 */
-		// ///////// Prints Final stats ///////////
+		/////////// Runs the Game ///////////
+		
+		while (p.isAlive() == true){ 
+		c.print();  // Outputs the choice to the user 
+		int x = s.nextInt(); // Takes in the user's input and stores it in x //
+		c.execute(x);  //Makes decision with x //
+		o.updateAttributes(p);
+		c = cs.getNextChoice(p); // Makes c the next choice
+		}
+		
+		/////////// Prints Final stats ///////////
 
 		System.out.println("You Died.");
 		System.out.println("These are your final stats:");
