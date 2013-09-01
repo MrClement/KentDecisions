@@ -14,19 +14,6 @@ public class Driver {
 		String a = s.nextLine();
 		Person p = new Person(a);
 
-		/////////// Makes new ChoiceStorage object cs ///////////
-
-		ChoiceStorage cs = new ChoiceStorage();
-
-		/////////// Makes new Choice object c ///////////
-
-		Choice c = cs.getNextChoice(p);
-
-		/////////// Makes new Outcome object o ///////////
-
-		Outcome o = new Outcome(true, c.getCharismaReq(),
-		c.getIntelligenceReq(), c.getStrengthReq(), c.getWealthReq(),
-		c.getConfindenceReq(), c.getAgeReq());
 
 		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 
@@ -41,6 +28,20 @@ public class Driver {
 		System.out.println("Confidence = " + p.getConfidence());
 
 		s.nextLine();
+		
+		/////////// Makes new ChoiceStorage object cs ///////////
+
+		ChoiceStorage cs = new ChoiceStorage();
+
+		/////////// Makes new Choice object c ///////////
+
+		Choice c = cs.getNextChoice(p);
+
+		/////////// Makes new Outcome object o ///////////
+
+		Outcome o = new Outcome(true, c.getCharismaReq(),
+		c.getIntelligenceReq(), c.getStrengthReq(), c.getWealthReq(),
+		c.getConfindenceReq(), c.getAgeReq());
 
 		/////////// Runs the Game ///////////
 		
