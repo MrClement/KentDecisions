@@ -17,6 +17,8 @@ public class Driver {
 
 		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 
+		
+		
 		System.out.println("These are your stats:");
 		System.out.println(p.getName() + ":");
 		System.out.println("You are male");
@@ -31,7 +33,7 @@ public class Driver {
 		
 		/////////// Makes new ChoiceStorage object cs ///////////
 
-		ChoiceStorage cs = new ChoiceStorage();
+		ChoiceStorage cs = new ChoiceStorage(p);
 
 		/////////// Makes new Choice object c ///////////
 
@@ -46,11 +48,11 @@ public class Driver {
 		/////////// Runs the Game ///////////
 		
 		while (p.isAlive() == true){ 
+		c = cs.getNextChoice(p); // Makes c the next choice
 		c.print();  // Outputs the choice to the user 
 		int x = s.nextInt(); // Takes in the user's input and stores it in x //
-		c.execute(x);  //Makes decision with x //
+		o=c.execute(x);  //Makes decision with x //
 		o.updateAttributes(p);
-		c = cs.getNextChoice(p); // Makes c the next choice
 		}
 		
 		/////////// Prints Final stats ///////////

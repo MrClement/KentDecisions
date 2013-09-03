@@ -3,14 +3,14 @@ package game;
 import java.util.ArrayList;
 
 public class ChoiceStorage {
-	private int currentChoice;
+	private int currentChoice=-1;
 	private ArrayList<Choice> choices = new ArrayList<Choice>();
 
 	/**
 	 * Builds a new instance of ChoiceStorages
 	 */
-	public ChoiceStorage() {
-		
+	public ChoiceStorage(Person p) {
+	
 	}
 	
 	/**
@@ -21,10 +21,8 @@ public class ChoiceStorage {
 	 * @return whether or not the person p is qualified for choice c
 	 */
 	private boolean isQualified(Person p, Choice c){
-		if(!(p.getAge()==c.getAgeReq())){
-			return false;
-		}
-		else if(!(p.getCharisma()>=c.getCharismaReq())){
+
+		 if(!(p.getCharisma()>=c.getCharismaReq())){
 			return false;
 		}
 		else if(!(p.getConfidence()>=c.getConfindenceReq())){
@@ -56,6 +54,7 @@ public class ChoiceStorage {
 		Choice selectedChoice=choices.get(currentChoice+1);
 		currentChoice++;
 		boolean qualified=false;
+
 		while(!qualified){
 			if(this.isQualified(p, selectedChoice)){
 				qualified=true;
