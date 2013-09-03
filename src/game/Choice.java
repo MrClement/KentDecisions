@@ -40,16 +40,16 @@ public class Choice {
 
 	public Outcome execute(int i) {
 		// Player inputs which choice-Modifies Final output
-		if (p.getCharisma() >= requirements[i].getCharismaReq()
-				&& p.getIntelligence() >= requirements[i].getIntelligenceReq()
-				&& p.getStrength() >= requirements[i].getStrengthReq()
-				&& p.getConfidence() >= requirements[i].getConfidenceReq()
-				&& p.getWealth() >= requirements[i].getWealthReq()) {
-			System.out.println(story[i]);
-			return outcomes[i];
+		if (p.getCharisma() >= requirements[i-1].getCharismaReq()
+				&& p.getIntelligence() >= requirements[i-1].getIntelligenceReq()
+				&& p.getStrength() >= requirements[i-1].getStrengthReq()
+				&& p.getConfidence() >= requirements[i-1].getConfidenceReq()
+				&& p.getWealth() >= requirements[i-1].getWealthReq()) {
+			System.out.println(story[i-1]);
+			return outcomes[i-1];
 		} else {
-			System.out.println(story[i + 10]);
-			return outcomes[i + 10];
+			System.out.println(story[i + 10-1]);
+			return outcomes[i + 10-1];
 		}
 	}
 
