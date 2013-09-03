@@ -14,11 +14,8 @@ public class Driver {
 		String a = s.nextLine();
 		Person p = new Person(a);
 
-
 		/////////// Outputs stats generated randomly upon creation of Person p ///////////
 
-		
-		
 		System.out.println("These are your stats:");
 		System.out.println(p.getName() + ":");
 		System.out.println("You are male");
