@@ -63,35 +63,80 @@ public class JeremyTeen {
 	private Outcome o3 = new Outcome(true, -1 , 5 , 0, 5, 2, 0);
 	private Outcome o4 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
 	
+	private Outcome o1a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o2a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o3a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o4a = new Outcome(true, 0 , 0 , 0, 0, 0, 0); 
+	
 	private Outcome[] ol1 = {
 		o1,
 		o2,
 		o3,
-		o4
-	};
+		o4,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		o1a,
+		o2a,
+		o3a,
+		o4a
+		};
 	
 	private Outcome o5 = new Outcome(true, 7 , -4 , 4, -2, 7, 0);
 	private Outcome o6 = new Outcome(true, 3 , 5 , 0, 0, 4, 0);
 	private Outcome o7 = new Outcome(true, 6 , 0 , 0, -1, 7, 0);
-	private Outcome o8 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
+	private Outcome o8 = new Outcome(true, 2 , 2 , 2, 2, 2, 0);
+	
+	private Outcome o5a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o6a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o7a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o8a = new Outcome(true, 0 , 0 , 0, 0, 0, 0);
 	
 	private Outcome[] ol2 = {
 		o5,
 		o6,
 		o7,
-		o8
+		o8,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		o5a,
+		o6a,
+		o7a,
+		o8a
 	};
 	
 	private Outcome o9 = new Outcome(true, 0 , 6 , 0, 3, 3, 0);
 	private Outcome o10 = new Outcome(true, 6 , 0 , 3, 0, 3, 0);
 	private Outcome o11 = new Outcome(true, -2 , 8 , 0, -2, 8, 0);
-	private Outcome o12 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
+	private Outcome o12 = new Outcome(true, 2 , 2 , 2, 2, 2, 0);
+	
+	private Outcome o9a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o10a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o11a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o12a = new Outcome(true, 0 , 0 , 0, 0, 0, 0);
 	
 	private Outcome[] ol3 = {
 		o9,
 		o10,
 		o11,
-		o12
+		o12,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		o9a,
+		o10a,
+		o11a,
+		o12a
 	};
 	
 	private Outcome o13 = new Outcome(true, 2 , -1 , 5, 0, 5, 0);
@@ -99,20 +144,47 @@ public class JeremyTeen {
 	private Outcome o15 = new Outcome(true, -1 , 5 , 0, 5, 2, 0);
 	private Outcome o16 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
 	
+	private Outcome o13a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o14a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o15a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o16a = new Outcome(true, 0 , 0 , 0, 0, 0, 0);
+	
 	private Outcome[] ol4 = {
 		o13,
 		o14,
 		o15,
-		o16
+		o16,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		o13a,
+		o14a,
+		o15a,
+		o16a
 	};
 	
 	private Outcome o17 = new Outcome(true, 2 , -1 , 5, 0, 5, 1);
 	private Outcome o18 = new Outcome(true, 5 , -1 , 0, 2, 5, 1);
 	
+	private Outcome o17a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
+	private Outcome o18a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
 	
 	private Outcome[] ol5 = {
 		o17,
 		o18,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		o17a,
+		o18a
 	};
 	
 	/////////// Constructs requirements and requirement arrays ///////////
