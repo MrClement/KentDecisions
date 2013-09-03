@@ -27,33 +27,83 @@ public class JeremyTeen {
 		"You get recruited by the Lax team because of your sick Lax skills. Lax.",
 		"You meet some new friends. Everyone seems to want to sit next to you at lunch.", 
 		"You hit the books. Your grades stay steady and the teachers seem to enjoy your participation in class.",
-		"You just kinda coast along. Nobody seems to know a whole lot about you."
+		"You just kinda coast along. Nobody seems to know a whole lot about you.",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck."
 	};
 	
 	private String[] sl2 = {
 		"You wake up on a park bench in the next town over wearing a traffic cone as hat.",
 		"The next day, your friend thanks you profusely for your wise actions of the previous night.", 
 		"You meet a girl named Maria and hit it off.",
-		"You stay in the corner and keep to yourself. No one seems to notice your presence."
+		"You stay in the corner and keep to yourself. No one seems to notice your presence.",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck."
 	};
 	
 	private String[] sl3 = {
 		"After hours of studying you feel ready for your tests. You do well on all of them.",
 		"You don't do awesome on your tests, but you feel as though your friends appreciate your carefree style.", 
 		"You do well on your tests: maybe a little too well. Nobody has proof of anything, but you lose the trust of those around you.",
-		"You do pretty average, although your not even sure your teachers know your name."
+		"You do pretty average, although your not even sure your teachers know your name.",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck."
 	};
 	
 	private String[] sl4 = {
 		"You make it in to Engineering U. Congratulations!",
 		"You make it in to Lax U. Congratulations!", 
 		"You make it in to Lawyer U. Congratulations!",
-		"You take a job at McDoodles to make an income. Congratulations?"
+		"You take a job at McDoodles to make an income. Congratulations?",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck.",
+		"Error 808: you suck."
 	};
 	
 	private String[] sl5 = {
 		"Welcome to adulthood.",
-		"Your parents aren't very happy about this."
+		"Your parents aren't very happy about this.",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		"Error 808: you suck.",
+		"Error 808: you suck."
 	};
 	
 	/////////// Constructs outcomes and outcome arrays ///////////
