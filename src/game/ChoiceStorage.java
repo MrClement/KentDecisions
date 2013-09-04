@@ -215,8 +215,8 @@ public class ChoiceStorage {
 			o16a
 		};
 		
-		final Outcome o17 = new Outcome(true, 2 , -1 , 5, 0, 5, 1);
-		final Outcome o18 = new Outcome(true, 5 , -1 , 0, 2, 5, 1);
+		final Outcome o17 = new Outcome(true, 2 , 2 , 2, 2, 2, 5);
+		final Outcome o18 = new Outcome(true, 0 , 0 , 0, 0, 0, 0);
 		
 		final Outcome o17a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
 		final Outcome o18a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
