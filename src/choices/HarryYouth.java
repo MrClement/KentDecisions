@@ -82,10 +82,44 @@ public class HarryYouth {
 	
 	//Choice3
 	
+	String [] c3Story = new String []{
+			"You and your bros go outside hit on some ladies and P some Ls. \nYou kids are clearly the kings of the castle keep it up",
+			"Your dedication to academia is apparaent. \nYour teacher loves you and you feel your brain growing",
+			"you again.....",
+			"You guys play some tag and hide and go seek keep growing with your peers."
+			};
 	
+	Outcome [] outcomeLineC3 = new Outcome []{
+			new Outcome(true, 3, 0, 0, 0, 9, 0), 
+			new Outcome(true, 2, -5, 0, 0, 0, 0),
+			new Outcome(true, 0, 5, 0, 0, -2, 0),
+			new Outcome(true, 4, 0, 0, 0, 2, 0),	
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			new Outcome(true, -3, 0, 0, 0, -2, 0)
+			};
 	
-	Choice c3 = new Choice("Your teacher says 'Recess' and all the kids go outside what do you do? \n1.", storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
-	Choice c4 = new Choice(printText1, storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
+	Requirements r3 [] =  {
+			new Requirements(4, 0, 0, 0, 11),
+			new Requirements(-1,-1,-1,-1,-1),
+			new Requirements(0,0,0,0,0),
+			new Requirements(0,0,0,0,0),
+	};
+	
+	Choice c3 = new Choice("Your teacher says 'Recess' and all the kids go outside what do you do? \n1.Stay indoors and read. \n2.Go outside with your bros and kick it. \n3.Stay indoors and sniff glue. \n4.Go outside and play with random kids.", 
+			c3Story, r3, outcomeLineC3, d, d.getAge(), d.getCharisma(), d.getIntelligence(), d.getStrength(), d.getWealth(), d.getConfidence());
+	
+	//Choice4
+	String [] c4Story = new String[]{
+			"Your pretty much the Cleaver family. \nYou have family dinners and movie nights on the weekend, your parents grant you a ton of responsility and push you to new heights",
+			""
+	}
+	
+	Choice c4 = new Choice("You have come of age to choose what your family life will be like. \n1.Be a happy content boy that always does what their parents say. \n2.Stay in your room and study and obey your parents whenever. \n3.Your a rebel...Enough said. \n4.You follow in the excessive and bourgeois lifestyle of your parents", storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
 	Choice c5 = new Choice(printText1, storylines, outcomelines, age, charisma, intelligence, strength, wealth, confidence);
 
 }
