@@ -74,9 +74,9 @@ public class ChoiceStorage {
 		};
 		
 		final String[] sl4 = {
-			"You make it in to Engineering U. Congratulations!",
 			"You make it in to Lax U. Congratulations!", 
 			"You make it in to Lawyer U. Congratulations!",
+			"You make it in to Engineering U. Congratulations!",
 			"You take a job at McDoodles to make an income. Congratulations?",
 			null,
 			null,
@@ -274,9 +274,9 @@ public class ChoiceStorage {
 			r12
 		};
 		
-		final Requirements r13 = new Requirements(0, 10, 0, 5, 5);
-		final Requirements r14 = new Requirements(0, 0, 10, 5, 5);
-		final Requirements r15 = new Requirements(10, 0, 0, 5, 5);
+		final Requirements r13 = new Requirements(0, 0, 10, 5, 5);
+		final Requirements r14 = new Requirements(10, 0, 0, 5, 5);
+		final Requirements r15 = new Requirements(0, 10, 0, 5, 5);
 		final Requirements r16 = new Requirements(0, 0, 0, 0, 0);
 		
 		final Requirements[] ra4 = {
