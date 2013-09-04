@@ -356,11 +356,11 @@ public class ChoiceStorage {
 		
 		
 		
-		Choice choiceA1=new Choice("You decide to get a job. The choices are 'McDoodles worker', 'Mechanic', 'Sports Star', 'Engineer', 'CEO', or 'Politician'", 
+		Choice choiceA1=new Choice("You decide to get a job. The choices are \n1: 'McDoodles worker'\n2: 'Mechanic'\n3: 'Sports Star'\n4: 'Engineer'\n5: 'CEO'\n6: or 'Politician'", 
 								A1Story, A1reqs, A1Outcomes, p, 2, 0, 0, 0, 0, 0);
 		
 		
-		final String A2printText = "You are bored at home. You decide to do something. You can read a book, work out, or go to a party";
+		final String A2printText = "You are bored at home. You decide to do something. You can\n1: read a book\n2: work out, or \n3:go to a party";
 		
 		final String[] A2Story = {
 				"You decide to read a book. You are now more intelligent",
@@ -403,7 +403,7 @@ public class ChoiceStorage {
 		
 		Choice choiceA2=new Choice(A2printText, A2Story, A2Reqs, A2Outcomes, p, 2, 0, 0, 0, 0, 0);
 		
-		final String A3printText="You are very lonely. Would you like to try to get married?";
+		final String A3printText="You are very lonely. Would you like to try to get married? (1 yes, 2 no)";
 		
 		final String[] A3Story= {
 				"Congratulations! You managed to convince someone to spend their entire life with you! You are now married.",
@@ -489,7 +489,7 @@ public class ChoiceStorage {
 		
 		Choice choiceA4=new Choice(A4printText, A4Story, A4reqs, A4Outcomes, p, 3, 30, 0, 0, 0, 0);
 		
-		final String A5PrintText = "Kids?";
+		final String A5PrintText = "Kids? (yes/maybe/no)";
 		
 		final String[] A5Story = {
 				"You've had a baby! prepare for the next 18 years well",
