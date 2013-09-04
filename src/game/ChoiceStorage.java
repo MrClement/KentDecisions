@@ -17,7 +17,7 @@ public class ChoiceStorage {
 		final String pt1 = "Welcome to your first day of highschool! Today you get to decide how you want to act.\n1: Become a sports jock.\n2: Hang with the popular crowd.\n3: Study for your classes.\n4: Do nothing";
 		final String pt2 = "You get invited to a party. Everyone seems to be having fun. Drugs and alcohol are present.\n1: Get drunk and go crazy\n2: Drive your drunk friend home\n3: Socialize\n4: Stare at your phone";
 		final String pt3 = "It is the day before finals. The year is almost over and summer is within your reach. Do you: \n1: Spend your time studying for your tests.\n2: Hang out with your friends and cram the morning of the test.\n3: Don't study and try to cheat off of someone else.\n4: Just kinda chill.";
-		final String pt4 = "It is senior year and about time you made up your mind about College. Let's apply! \n1: You apply to the best engineering schools in the country. \n2: You apply to schools with Division A Lax teams. \n3: You apply to law school. \n4: You decide maybe college isn't your thing.";
+		final String pt4 = "It is senior year and about time you made up your mind about College. Let's apply! \n1: You apply to schools with Division A Lax teams. \n2: You apply to law school. \n3:You apply to the best engineering schools in the country. \n4: You decide maybe college isn't your thing.";
 		final String pt5 = "It's time to find a full-time job. \n1: Get a job. \n2: Go back to live at your parents' house.";
 		
 		/////////// Constructs the outcome string arrays ///////////
