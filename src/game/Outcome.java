@@ -55,6 +55,7 @@ public class Outcome {
 	 *            is the Person object playing the game that is to be modified.
 	 */
 	public void updateAttributes(Person p) {
+		System.err.println(charisma + " " + intelligence + " " + strength + " " + wealth + " " + confidence);
 		p.setAlive(alive);
 		int newStat = p.getCharisma() + charisma;
 		if (newStat <= 0) {
@@ -65,26 +66,27 @@ public class Outcome {
 		newStat = p.getIntelligence() + intelligence;
 		if (newStat <= 0) {
 			p.setIntelligence(0);
+			System.err.println("here");
 		} else {
-			p.setIntelligence(0);
+			p.setIntelligence(newStat);
 		}
 		newStat = p.getStrength() + strength;
 		if (newStat <= 0) {
 			p.setStrength(0);
 		} else {
-			p.setStrength(0);
+			p.setStrength(newStat);
 		}
 		newStat = p.getWealth() + wealth;
 		if (newStat <= 0) {
 			p.setWealth(0);
 		} else {
-			p.setWealth(0);
+			p.setWealth(newStat);
 		}
 		newStat = p.getConfidence() + confidence;
 		if (newStat <= 0) {
 			p.setConfidence(0);
 		} else {
-			p.setConfidence(0);
+			p.setConfidence(newStat);
 		}
 		p.setAge(age);
 	}
