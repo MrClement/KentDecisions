@@ -26,6 +26,7 @@ public class Driver {
 		System.out.println("Strength = " + p.getStrength());
 		System.out.println("Wealth = " + p.getWealth());
 		System.out.println("Confidence = " + p.getConfidence());
+		System.out.println();
 
 		// ///////// Makes new ChoiceStorage object cs ///////////
 
