@@ -33,9 +33,9 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"The bros stare at you blankly. You really thought you could lax with them?",
+			"It's obvious to them that you aren't that cool.",
+			"You lose concentration while trying to study. Maybe you have ADHD?",
 			"Error 808: you suck."
 		};
 		
@@ -50,9 +50,9 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"You take one drink and throw up. You're not exactly the life of the party,",
+			"Your friend says he doesn't need any help. He gets in his car and crashes it into a tree almost immediately.",
+			"You can't talk over the music. You don't end up meeting anyone",
 			"Error 808: you suck."
 		};
 		
@@ -67,9 +67,9 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"You fall asleep while studying. You don't do great on your tests",
+			"You fail your tests, and your friends think you should spend more time on your academics",
+			"You get caught! You get a zero on all of your tests",
 			"Error 808: you suck."
 		};
 		
@@ -84,9 +84,9 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"Your lax skills aren't quite up to snuff. You get rejected.",
+			"You aren't a great public speaker. You get rejected.",
+			"You aren't that great at math and science. You get rejected.",
 			"Error 808: you suck."
 		};
 		
@@ -101,7 +101,7 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
+			"You aren't qualified enough.",
 			"Error 808: you suck."
 		};
 		
