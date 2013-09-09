@@ -330,7 +330,7 @@ public class ChoiceStorage {
 			new Outcome(true, 0, 15, 0, 15, 10, 0),
 			new Outcome(true, 5, 10, 0, 25, 7, 0),
 			new Outcome(true, 10, 7, 0, 15, 10, 0),
-			null,
+			new Outcome(true, 100, 100, 100, -100, 100, 100),
 			null,
 			null,
 			null,
