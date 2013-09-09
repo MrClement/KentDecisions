@@ -21,6 +21,8 @@ public class Person {
 	 */
 	
 	public Person(String name){
+		boolean goodEnough=false;
+		while(!goodEnough){
 		this.name=name;
 		Random rand=new Random();
 		this.intelligence=rand.nextInt(9)+1;
@@ -31,6 +33,10 @@ public class Person {
 		this.confidence=rand.nextInt(9)+1;
 		this.alive=true;
 		this.wealth=rand.nextInt(9)+1;
+		if(intelligence+charisma+strength+confidence+wealth>=25){
+			goodEnough=true;
+		}
+		}
 		
 	}
 
