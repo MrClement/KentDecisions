@@ -582,8 +582,7 @@ public class ChoiceStorage {
 	 * @return
 	 */
 	public Choice getNextChoice(Person p) {
-		Choice selectedChoice=choices.get(currentChoice+1);
-		currentChoice++;
+		Choice selectedChoice=choices.get(++currentChoice);
 		boolean qualified=false;
 
 		while(!qualified){
