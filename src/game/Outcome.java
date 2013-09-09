@@ -65,7 +65,6 @@ public class Outcome {
 		newStat = p.getIntelligence() + intelligence;
 		if (newStat <= 0) {
 			p.setIntelligence(0);
-			System.err.println("here");
 		} else {
 			p.setIntelligence(newStat);
 		}
