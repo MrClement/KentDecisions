@@ -28,7 +28,7 @@ public class ChoiceStorage {
 			"You hit the books. Your grades stay steady and the teachers seem to enjoy your participation in class.",
 			"You just kinda coast along. Nobody seems to know a whole lot about you.",
 			null,
-			null,
+			"You win",
 			null,
 			null,
 			null,
@@ -110,7 +110,8 @@ public class ChoiceStorage {
 		final Outcome o1 = new Outcome(true, 2 , -1 , 5, 0, 5, 0);
 		final Outcome o2 = new Outcome(true, 5 , -1 , 0, 2, 5, 0);
 		final Outcome o3 = new Outcome(true, -1 , 5 , 0, 5, 2, 0);
-		final Outcome o4 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
+		final Outcome o4 = new Outcome(true, 2 , 2 , 2, 2, 2, 0);
+		final Outcome owin = new Outcome(true, 100 , 100 , 100, 100, 100, 0);
 		
 		final Outcome o1a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
 		final Outcome o2a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
@@ -123,7 +124,7 @@ public class ChoiceStorage {
 			o3,
 			o4,
 			null,
-			null,
+			owin,
 			null,
 			null,
 			null,
@@ -242,12 +243,15 @@ public class ChoiceStorage {
 		final Requirements r2 = new Requirements(2, 0, 0, 2, 2);
 		final Requirements r3 = new Requirements(1, 3, 0, 1, 1);
 		final Requirements r4 = new Requirements(0, 0, 0, 0, 0);
+		final Requirements rwin = new Requirements(0, 0, 0, 0, 0);
 		
 		final Requirements[] ra1 = {
 			r1,
 			r2,
 			r3,
-			r4
+			r4,
+			null,
+			rwin
 		};
 		
 		final Requirements r5 = new Requirements(6, 0, 0, 0, 6);
