@@ -26,6 +26,7 @@ public class Driver {
 		System.out.println("Strength = " + p.getStrength());
 		System.out.println("Wealth = " + p.getWealth());
 		System.out.println("Confidence = " + p.getConfidence());
+		System.out.println();
 
 		// ///////// Makes new ChoiceStorage object cs ///////////
 
@@ -45,6 +46,15 @@ public class Driver {
 		while (p.isAlive() == true) {
 			c.print(); // Outputs the choice to the user
 			int x = s.nextInt(); // Takes in the user's input and stores it in x
+			if (x == 42) {
+				System.out.println("Charisma = " + p.getCharisma());
+				System.out.println("Intelligence = " + p.getIntelligence());
+				System.out.println("Strength = " + p.getStrength());
+				System.out.println("Wealth = " + p.getWealth());
+				System.out.println("Confidence = " + p.getConfidence());
+				System.out.println("Please select an option:");
+				x = s.nextInt();
+			}
 			o = c.execute(x); // Makes decision with x
 			o.updateAttributes(p); // Updates the players Attributes
 			if (!p.isAlive()) {

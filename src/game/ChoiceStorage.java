@@ -17,7 +17,7 @@ public class ChoiceStorage {
 		final String pt1 = "Welcome to your first day of highschool! Today you get to decide how you want to act.\n1: Become a sports jock.\n2: Hang with the popular crowd.\n3: Study for your classes.\n4: Do nothing";
 		final String pt2 = "You get invited to a party. Everyone seems to be having fun. Drugs and alcohol are present.\n1: Get drunk and go crazy\n2: Drive your drunk friend home\n3: Socialize\n4: Stare at your phone";
 		final String pt3 = "It is the day before finals. The year is almost over and summer is within your reach. Do you: \n1: Spend your time studying for your tests.\n2: Hang out with your friends and cram the morning of the test.\n3: Don't study and try to cheat off of someone else.\n4: Just kinda chill.";
-		final String pt4 = "It is senior year and about time you made up your mind about College. Let's apply! \n1: You apply to the best engineering schools in the country. \n2: You apply to schools with Division A Lax teams. \n3: You apply to law school. \n4: You decide maybe college isn't your thing.";
+		final String pt4 = "It is senior year and about time you made up your mind about College. Let's apply! \n1: You apply to schools with Division A Lax teams. \n2: You apply to law school. \n3: You apply to the best engineering schools in the country. \n4: You decide maybe college isn't your thing.";
 		final String pt5 = "It's time to find a full-time job. \n1: Get a job. \n2: Go back to live at your parents' house.";
 		
 		/////////// Constructs the outcome string arrays ///////////
@@ -28,14 +28,14 @@ public class ChoiceStorage {
 			"You hit the books. Your grades stay steady and the teachers seem to enjoy your participation in class.",
 			"You just kinda coast along. Nobody seems to know a whole lot about you.",
 			null,
+			"You win",
 			null,
 			null,
 			null,
 			null,
-			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"The bros stare at you blankly. You really thought you could lax with them?",
+			"It's obvious to them that you aren't that cool.",
+			"You lose concentration while trying to study. Maybe you have ADHD?",
 			"Error 808: you suck."
 		};
 		
@@ -50,9 +50,9 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"You take one drink and throw up. You're not exactly the life of the party,",
+			"Your friend says he doesn't need any help. He gets in his car and crashes it into a tree almost immediately.",
+			"You can't talk over the music. You don't end up meeting anyone",
 			"Error 808: you suck."
 		};
 		
@@ -67,16 +67,16 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"You fall asleep while studying. You don't do great on your tests",
+			"You fail your tests, and your friends think you should spend more time on your academics",
+			"You get caught! You get a zero on all of your tests",
 			"Error 808: you suck."
 		};
 		
 		final String[] sl4 = {
-			"You make it in to Engineering U. Congratulations!",
 			"You make it in to Lax U. Congratulations!", 
 			"You make it in to Lawyer U. Congratulations!",
+			"You make it in to Engineering U. Congratulations!",
 			"You take a job at McDoodles to make an income. Congratulations?",
 			null,
 			null,
@@ -84,9 +84,9 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
-			"Error 808: you suck.",
-			"Error 808: you suck.",
+			"Your lax skills aren't quite up to snuff. You get rejected.",
+			"You aren't a great public speaker. You get rejected.",
+			"You aren't that great at math and science. You get rejected.",
 			"Error 808: you suck."
 		};
 		
@@ -101,7 +101,7 @@ public class ChoiceStorage {
 			null,
 			null,
 			null,
-			"Error 808: you suck.",
+			"You aren't qualified enough.",
 			"Error 808: you suck."
 		};
 		
@@ -110,7 +110,8 @@ public class ChoiceStorage {
 		final Outcome o1 = new Outcome(true, 2 , -1 , 5, 0, 5, 0);
 		final Outcome o2 = new Outcome(true, 5 , -1 , 0, 2, 5, 0);
 		final Outcome o3 = new Outcome(true, -1 , 5 , 0, 5, 2, 0);
-		final Outcome o4 = new Outcome(true, 2 , 2 , 2, 2, 2, 0); 
+		final Outcome o4 = new Outcome(true, 2 , 2 , 2, 2, 2, 0);
+		final Outcome owin = new Outcome(true, 100 , 100 , 100, 100, 100, 0);
 		
 		final Outcome o1a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
 		final Outcome o2a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
@@ -123,7 +124,7 @@ public class ChoiceStorage {
 			o3,
 			o4,
 			null,
-			null,
+			owin,
 			null,
 			null,
 			null,
@@ -215,8 +216,8 @@ public class ChoiceStorage {
 			o16a
 		};
 		
-		final Outcome o17 = new Outcome(true, 2 , -1 , 5, 0, 5, 1);
-		final Outcome o18 = new Outcome(true, 5 , -1 , 0, 2, 5, 1);
+		final Outcome o17 = new Outcome(true, 2 , 2 , 2, 2, 2, 5);
+		final Outcome o18 = new Outcome(true, 0 , 0 , 0, 0, 0, 0);
 		
 		final Outcome o17a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
 		final Outcome o18a = new Outcome(true, -1 , -1 , -1, -1, -1, 0);
@@ -242,12 +243,15 @@ public class ChoiceStorage {
 		final Requirements r2 = new Requirements(2, 0, 0, 2, 2);
 		final Requirements r3 = new Requirements(1, 3, 0, 1, 1);
 		final Requirements r4 = new Requirements(0, 0, 0, 0, 0);
+		final Requirements rwin = new Requirements(0, 0, 0, 0, 0);
 		
 		final Requirements[] ra1 = {
 			r1,
 			r2,
 			r3,
-			r4
+			r4,
+			null,
+			rwin
 		};
 		
 		final Requirements r5 = new Requirements(6, 0, 0, 0, 6);
@@ -274,9 +278,9 @@ public class ChoiceStorage {
 			r12
 		};
 		
-		final Requirements r13 = new Requirements(0, 10, 0, 5, 5);
-		final Requirements r14 = new Requirements(0, 0, 10, 5, 5);
-		final Requirements r15 = new Requirements(10, 0, 0, 5, 5);
+		final Requirements r13 = new Requirements(0, 0, 10, 5, 5);
+		final Requirements r14 = new Requirements(10, 0, 0, 5, 5);
+		final Requirements r15 = new Requirements(0, 10, 0, 5, 5);
 		final Requirements r16 = new Requirements(0, 0, 0, 0, 0);
 		
 		final Requirements[] ra4 = {
@@ -330,7 +334,7 @@ public class ChoiceStorage {
 			new Outcome(true, 0, 15, 0, 15, 10, 0),
 			new Outcome(true, 5, 10, 0, 25, 7, 0),
 			new Outcome(true, 10, 7, 0, 15, 10, 0),
-			null,
+			new Outcome(true, 100, 100, 100, -100, 100, 100),
 			null,
 			null,
 			null,
@@ -356,11 +360,11 @@ public class ChoiceStorage {
 		
 		
 		
-		Choice choiceA1=new Choice("You decide to get a job. The choices are 'McDoodles worker', 'Mechanic', 'Sports Star', 'Engineer', 'CEO', or 'Politician'", 
+		Choice choiceA1=new Choice("You decide to get a job. The choices are \n1: 'McDoodles worker'\n2: 'Mechanic'\n3: 'Sports Star'\n4: 'Engineer'\n5: 'CEO'\n6: or 'Politician'", 
 								A1Story, A1reqs, A1Outcomes, p, 2, 0, 0, 0, 0, 0);
 		
 		
-		final String A2printText = "You are bored at home. You decide to do something. You can read a book, work out, or go to a party";
+		final String A2printText = "You are bored at home. You decide to do something. You can\n1: read a book\n2: work out, or \n3:go to a party";
 		
 		final String[] A2Story = {
 				"You decide to read a book. You are now more intelligent",
@@ -403,7 +407,7 @@ public class ChoiceStorage {
 		
 		Choice choiceA2=new Choice(A2printText, A2Story, A2Reqs, A2Outcomes, p, 2, 0, 0, 0, 0, 0);
 		
-		final String A3printText="You are very lonely. Would you like to try to get married?";
+		final String A3printText="You are very lonely. Would you like to try to get married? (1 yes, 2 no)";
 		
 		final String[] A3Story= {
 				"Congratulations! You managed to convince someone to spend their entire life with you! You are now married.",
@@ -489,7 +493,7 @@ public class ChoiceStorage {
 		
 		Choice choiceA4=new Choice(A4printText, A4Story, A4reqs, A4Outcomes, p, 3, 30, 0, 0, 0, 0);
 		
-		final String A5PrintText = "Kids?";
+		final String A5PrintText = "Kids? (yes/maybe/no)";
 		
 		final String[] A5Story = {
 				"You've had a baby! prepare for the next 18 years well",
@@ -582,8 +586,7 @@ public class ChoiceStorage {
 	 * @return
 	 */
 	public Choice getNextChoice(Person p) {
-		Choice selectedChoice=choices.get(currentChoice+1);
-		currentChoice++;
+		Choice selectedChoice=choices.get(++currentChoice);
 		boolean qualified=false;
 
 		while(!qualified){
