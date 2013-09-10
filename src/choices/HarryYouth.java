@@ -61,8 +61,10 @@ public class HarryYouth {
 			"You again.....",
 			"You guys play some tag and hide and go seek keep growing with your peers." };
 
-	Outcome[] outcomeLineC3 = new Outcome[] { new Outcome(true, 3, 0, 0, 0, 9, 0),
-			new Outcome(true, 2, -5, 0, 0, 0, 0), new Outcome(true, 0, 5, 0, 0, -2, 0),
+	Outcome[] outcomeLineC3 = new Outcome[] { 
+			new Outcome(true, 3, 0, 0, 0, 9, 0),
+			new Outcome(true, 2, -5, 0, 0, 0, 0),
+			new Outcome(true, 0, 5, 0, 0, -2, 0),
 			new Outcome(true, 4, 0, 0, 0, 2, 0), null, null, null, null, null, null,
 			new Outcome(true, -3, 0, 0, 0, -2, 0) };
 

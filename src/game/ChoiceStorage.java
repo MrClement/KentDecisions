@@ -55,9 +55,10 @@ public class ChoiceStorage {
 		// Choice3
 
 		final String[] hc3Story = new String[] {
-				"You and your bros go outside hit on some ladies and P some Ls. \nYou kids are clearly the kings of the castle keep it up",
 				"Your dedication to academia is apparaent. \nYour teacher loves you and you feel your brain growing",
-				"You again.....", "You guys play some tag and hide and go seek keep growing with your peers." };
+				"You and your bros go outside hit on some ladies and P some Ls. \nYou kids are clearly the kings of the castle keep it up",
+				"You again.....", 
+				"You guys play some tag and hide and go seek keep growing with your peers." };
 
 		final Outcome[] outcomeLineC3 = new Outcome[] { new Outcome(true, 3, 0, 0, 0, 9, 0),
 				new Outcome(true, 2, -5, 0, 0, 0, 0), new Outcome(true, 0, 5, 0, 0, -2, 0),
