@@ -362,7 +362,7 @@ public class ChoiceStorage {
 				new Outcome(true, -10, -10, -10, -10, -40, 0), };
 		Choice choiceA3 = new Choice(A3printText, A3Story, A3reqs, A3Outcomes, p, 3, 0, 0, 0, 0, 0);
 
-		final String A4printText = "You really hate people. You're so angry you consider becoming a serial killer. Would you like to become a serial killer?";
+		final String A4printText = "You really hate people. You're so angry you consider becoming a serial killer. Would you like to become a serial killer?\n1: yes\n2:no" ;
 
 		final String[] A4Story = {
 				"You succeed at becoming a serial killer, you monster",
@@ -388,7 +388,7 @@ public class ChoiceStorage {
 
 		Choice choiceA4 = new Choice(A4printText, A4Story, A4reqs, A4Outcomes, p, 3, 30, 0, 0, 0, 0);
 
-		final String A5PrintText = "Kids? (yes/maybe/no)";
+		final String A5PrintText = "Kids?\n1: Yes \n2: Maybe \n3: Yes";
 
 		final String[] A5Story = {
 				"You've had a baby! prepare for the next 18 years well",
