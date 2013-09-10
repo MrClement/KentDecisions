@@ -65,6 +65,7 @@ public class Driver {
 
 		// ///////// Prints Final stats ///////////
 
+		System.out.println();
 		System.out.println("You Died.");
 		System.out.println("These are your final stats:");
 		System.out.println(p.getName() + ":");
@@ -73,6 +74,8 @@ public class Driver {
 		System.out.println("Strength = " + p.getStrength());
 		System.out.println("Wealth = " + p.getWealth());
 		System.out.println("Confidence = " + p.getConfidence());
+		
+		System.out.println("Your Overall Score is:" + (p.getCharisma()+p.getIntelligence()+p.getStrength()+p.getWealth()+p.getConfidence()));
 
 	}
 
