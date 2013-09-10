@@ -125,7 +125,7 @@ public class HarryYouth {
 			new Requirements(0, 0, 0, 0, 0), new Requirements(0, 0, 0, 0, 0), new Requirements(0, 0, 0, 0, 0), };
 
 	Choice c5 = new Choice(
-			"Now here is the BIG decision...\nYour parents have finally have decided to let you choose your pants...\n(Be Careful and wise this pretty much determines the game).\n1.Choose cargo shorts.\n2.Choose jeans.\n3.Choose Nantucket Reds\4.Cordaroy Overalls.\n5.Tie Die Shorts.",
+			"Now here is the BIG decision...\nYour parents have finally have decided to let you choose your pants...\n(Be Careful and wise this pretty much determines the game).\n1.Choose cargo shorts.\n2.Choose jeans.\n3.Choose Nantucket Reds\n4.Cordaroy Overalls.\n5.Tie Die Shorts.",
 			c5Story, r5, outcomeLineC5, p, p.getAge(), p.getCharisma(), p.getIntelligence(), p.getStrength(), p
 					.getWealth(), p.getConfidence());
 
