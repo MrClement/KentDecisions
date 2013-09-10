@@ -545,6 +545,11 @@ public class ChoiceStorage {
 
 		Choice wc5 = new Choice(wpt5, wsl5, wr5, wo5, p, p.getAge(), 0, 0, 0, 0, 0);
 
+		choices.add(hc1);
+		choices.add(hc2);
+		choices.add(hc3);
+		choices.add(hc4);
+		choices.add(hc5);
 		choices.add(c1);
 		choices.add(c2);
 		choices.add(c3);
