@@ -62,7 +62,7 @@ public class ChoiceStorage {
 				new Outcome(true, 4, 0, 0, 0, 2, 0), null, null, null, null, null, null,
 				new Outcome(true, -3, 0, 0, 0, -2, 0) };
 
-		final Requirements hr3[] = { new Requirements(4, 0, 0, 0, 11), new Requirements(0, 0, 0, 0, 0),
+		final Requirements hr3[] = { new Requirements(0, 0, 0, 0, 0), new Requirements(2, 0, 0, 0, 11),
 				new Requirements(0, 0, 0, 0, 0), new Requirements(0, 0, 0, 0, 0) };
 
 		final Choice hc3 = new Choice(
