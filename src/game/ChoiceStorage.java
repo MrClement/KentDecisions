@@ -27,8 +27,7 @@ public class ChoiceStorage {
 				new Outcome(true, 5, 0, 0, 0, 2, 0), new Outcome(true, 0, 0, 6, 0, 2, 0) };
 		final Choice hc1 = new Choice(
 				"When you are born you see an object in the distance what do you do? \n1. Leave the object alone \n2.Leave the object and cry \n3. Crawl over to the object and grab it \n4.Flail misserably\5.Crawl over to the object and shake it up and down.",
-				hc1Story, hr1, houtcomeLineC1, p, p.getAge(), p.getCharisma(), p.getIntelligence(), p.getStrength(), p
-						.getWealth(), p.getConfidence());
+				hc1Story, hr1, houtcomeLineC1, p, 0, 0, 0, 0, 0, 0);
 
 		// Choice2
 		final String[] hc2Story = new String[] {
@@ -49,32 +48,26 @@ public class ChoiceStorage {
 
 		final Choice hc2 = new Choice(
 				"You are now away from being in the isolated haven now known as 'Home' and you are entering a new place your parents call 'School'. \nWhen you enter this weird place you see kids like yourself running around. \nConfused by everything happening what do you do? \n1.Approach some of the boys that are playing blocks with eachother and say 'What up bros' .\n2.Sit in the corner and sniff and eat glue \n3.Go pick up a book and start looking at pictures. \n4.Approach one of the kids that are playing by themselves.",
-				hc2Story, hr2, houtcomeLineC2, p, p.getAge(), p.getCharisma(), p.getIntelligence(), p.getStrength(), p
-						.getWealth(), p.getConfidence());
+				hc2Story, hr2, houtcomeLineC2, p, 0, 0, 0, 0, 0, 0);
 
 		// Choice3
 
 		final String[] hc3Story = new String[] {
 				"Your dedication to academia is apparaent. \nYour teacher loves you and you feel your brain growing",
 				"You and your bros go outside hit on some ladies and P some Ls. \nYou kids are clearly the kings of the castle keep it up",
-				"You again.....", 
-				"You guys play some tag and hide and go seek keep growing with your peers." };
+				"You again.....", "You guys play some tag and hide and go seek keep growing with your peers." };
 
-		final Outcome[] outcomeLineC3 = new Outcome[] {
-				new Outcome(true, 3, 0, 0, 0, 9, 0),
-				new Outcome(true, 2, -5, 0, 0, 0, 0), 
-				new Outcome(true, 0, 5, 0, 0, -2, 0),
-				new Outcome(true, 4, 0, 0, 0, 2, 0), 
-				null, null, null, null, null, null,
+		final Outcome[] houtcomeLineC3 = new Outcome[] { new Outcome(true, 3, 0, 0, 0, 9, 0),
+				new Outcome(true, 2, -5, 0, 0, 0, 0), new Outcome(true, 0, 5, 0, 0, -2, 0),
+				new Outcome(true, 4, 0, 0, 0, 2, 0), null, null, null, null, null, null,
 				new Outcome(true, -3, 0, 0, 0, -2, 0) };
 
 		final Requirements hr3[] = { new Requirements(4, 0, 0, 0, 11), new Requirements(0, 0, 0, 0, 0),
-				new Requirements(0, 0, 0, 0, 0), new Requirements(0, 0, 0, 0, 0), };
+				new Requirements(0, 0, 0, 0, 0), new Requirements(0, 0, 0, 0, 0) };
 
 		final Choice hc3 = new Choice(
 				"Your teacher says 'Recess' and all the kids go outside what do you do? \n1.Stay indoors and read. \n2.Go outside with your bros and kick it. \n3.Stay indoors and sniff glue. \n4.Go outside and play with random kids.",
-				hc3Story, hr3, outcomeLineC3, p, p.getAge(), p.getCharisma(), p.getIntelligence(), p.getStrength(), p
-						.getWealth(), p.getConfidence());
+				hc3Story, hr3, houtcomeLineC3, p, 0, 0, 0, 0, 0, 0);
 
 		// Choice4
 		final String[] hc4Story = new String[] {
@@ -108,8 +101,7 @@ public class ChoiceStorage {
 
 		final Choice hc4 = new Choice(
 				"You have come of age to choose what your family life will be like. \n1.Be a happy content boy that always does what their parents say. \n2.Stay in your room and study and obey your parents whenever. \n3.Your a rebel...Enough said. \n4.You follow in the excessive and bourgeois lifestyle of your parents",
-				hc4Story, hr4, houtcomeLineC4, p, p.getAge(), p.getCharisma(), p.getIntelligence(), p.getStrength(), p
-						.getWealth(), p.getConfidence());
+				hc4Story, hr4, houtcomeLineC4, p, 0, 0, 0, 0, 0, 0);
 
 		// Choice5
 
@@ -131,8 +123,7 @@ public class ChoiceStorage {
 
 		final Choice hc5 = new Choice(
 				"Now here is the BIG decision...\nYour parents have finally have decided to let you choose your pants...\n(Be Careful and wise this pretty much determines the game).\n1.Choose cargo shorts.\n2.Choose jeans.\n3.Choose Nantucket Reds\n4.Cordaroy Overalls.\n5.Tie Die Shorts.",
-				hc5Story, hr5, houtcomeLineC5, p, p.getAge(), p.getCharisma(), p.getIntelligence(), p.getStrength(), p
-						.getWealth(), p.getConfidence());
+				hc5Story, hr5, houtcomeLineC5, p, 0, 0, 0, 0, 0, 0);
 
 		// ///////// Constructs the Prompts ///////////
 
