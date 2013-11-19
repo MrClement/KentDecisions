@@ -1,7 +1,6 @@
 package game;
 
 public class Choice {
-	private int Final;
 	private String printText; // This is the where the first era printext is
 	private String[] story; // this stores all the choices and storyline so the
 	private Requirements[] requirements; // execute class can print the choice
@@ -13,7 +12,6 @@ public class Choice {
 	private int strengthReq;
 	private int wealthReq;
 	private int confindenceReq;
-	private Outcome o = new Outcome(true, 0, 0, 0, 0, 0, 0);
 
 	private boolean success;
 
@@ -40,16 +38,16 @@ public class Choice {
 
 	public Outcome execute(int i) {
 		// Player inputs which choice-Modifies Final output
-		if (p.getCharisma() >= requirements[i-1].getCharismaReq()
-				&& p.getIntelligence() >= requirements[i-1].getIntelligenceReq()
-				&& p.getStrength() >= requirements[i-1].getStrengthReq()
-				&& p.getConfidence() >= requirements[i-1].getConfidenceReq()
-				&& p.getWealth() >= requirements[i-1].getWealthReq()) {
-			System.out.println(story[i-1]);
-			return outcomes[i-1];
+		if (p.getCharisma() >= requirements[i - 1].getCharismaReq()
+				&& p.getIntelligence() >= requirements[i - 1].getIntelligenceReq()
+				&& p.getStrength() >= requirements[i - 1].getStrengthReq()
+				&& p.getConfidence() >= requirements[i - 1].getConfidenceReq()
+				&& p.getWealth() >= requirements[i - 1].getWealthReq()) {
+			System.out.println(story[i - 1]);
+			return outcomes[i - 1];
 		} else {
-			System.out.println(story[i + 10-1]);
-			return outcomes[i + 10-1];
+			System.out.println(story[i + 10 - 1]);
+			return outcomes[i + 10 - 1];
 		}
 	}
 
